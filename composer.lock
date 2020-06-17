@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ff50312104fee941b4fcd37793e48aa",
+    "content-hash": "a9e249c41dfd5cf2961450809fcccef2",
     "packages": [
         {
             "name": "amphp/amp",
@@ -383,6 +383,96 @@
             ],
             "description": "Basic HTTP primitives which can be shared by servers and clients.",
             "time": "2020-01-14T17:41:56+00:00"
+        },
+        {
+            "name": "amphp/http-client",
+            "version": "v4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/http-client.git",
+                "reference": "fa7925363e6d5a0d0d337e2e6eb1affb93cf226e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/http-client/zipball/fa7925363e6d5a0d0d337e2e6eb1affb93cf226e",
+                "reference": "fa7925363e6d5a0d0d337e2e6eb1affb93cf226e",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/amp": "^2.4",
+                "amphp/byte-stream": "^1.6",
+                "amphp/hpack": "^3",
+                "amphp/http": "^1.6",
+                "amphp/socket": "^1",
+                "amphp/sync": "^1.3",
+                "league/uri": "^6",
+                "php": ">=7.2",
+                "psr/http-message": "^1"
+            },
+            "conflict": {
+                "amphp/file": "<0.2"
+            },
+            "require-dev": {
+                "amphp/file": "^1 || ^0.3 || ^0.2",
+                "amphp/http-server": "^2",
+                "amphp/php-cs-fixer-config": "dev-master",
+                "amphp/phpunit-util": "^1.1",
+                "amphp/react-adapter": "^2.1",
+                "clue/socks-react": "^1.0",
+                "ext-json": "*",
+                "kelunik/link-header-rfc5988": "^1.0",
+                "laminas/laminas-diactoros": "^2.3",
+                "phpunit/phpunit": "^7 || ^8 || ^9",
+                "vimeo/psalm": "^3.9@dev"
+            },
+            "suggest": {
+                "amphp/file": "Required for file request bodies and HTTP archive logging",
+                "ext-json": "Required for logging HTTP archives",
+                "ext-zlib": "Allows using compression for response bodies."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amp\\Http\\Client\\": "src"
+                },
+                "files": [
+                    "src/Internal/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Lowrey",
+                    "email": "rdlowrey@gmail.com"
+                },
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                },
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@trowski.com"
+                }
+            ],
+            "description": "Asynchronous concurrent HTTP/2 and HTTP/1.1 client built on the Amp concurrency framework",
+            "homepage": "https://github.com/amphp/http-client",
+            "keywords": [
+                "async",
+                "client",
+                "concurrent",
+                "http",
+                "non-blocking",
+                "rest"
+            ],
+            "time": "2020-06-16T20:45:05+00:00"
         },
         {
             "name": "amphp/http-server",

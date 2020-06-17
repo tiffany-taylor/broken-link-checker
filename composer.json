@@ -2,7 +2,8 @@
   "require": {
     "amphp/amp": "2.4",
     "amphp/http-server": "2.0",
-    "rdlowrey/auryn": "^1.4"
+    "rdlowrey/auryn": "^1.4",
+    "amphp/http-client": "^4.4"
   },
   "autoload": {
     "psr-0": {
