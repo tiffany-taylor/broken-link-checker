@@ -2,12 +2,17 @@
 
 namespace BrokenLinkChecker;
 
+use BrokenLinkChecker\HttpClient;
+
 class Crawler
 {
     private string $url;
-    public function __construct(string $url)
+    private HttpClient $httpClient;
+
+    public function __construct(string $url, HttpClient $httpClient)
     {
         $this->url = $url;
+        $this->httpClient = $httpClient;
     }
 
     public function crawl()
