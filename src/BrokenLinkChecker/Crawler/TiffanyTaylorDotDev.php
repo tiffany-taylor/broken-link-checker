@@ -3,10 +3,10 @@
 
 namespace BrokenLinkChecker\Crawler;
 
-
 class TiffanyTaylorDotDev implements Crawler
 {
     public string $url;
+
 
     public function __construct(string $url)
     {

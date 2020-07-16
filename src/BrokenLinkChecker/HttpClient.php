@@ -15,7 +15,5 @@ class HttpClient
 
     public function makeRequest(): bool
     {
-
     }
-
 }
