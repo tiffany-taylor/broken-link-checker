@@ -13,4 +13,9 @@ class HttpClient
         $this->client = $client;
     }
 
+    public function makeRequest(): bool
+    {
+
+    }
+
 }
