@@ -15,5 +15,6 @@ class HttpClient
 
     public function makeRequest(): bool
     {
+        return true; // TODO write code ...
     }
 }
